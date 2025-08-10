@@ -26,31 +26,31 @@ export default function SocialLinksProfile() {
       <div className="social-links-profile--socials-list">
         <Button
           aria-label="Visit Jessica's GitHub profile"
-          href='"https://github.com/joao-almeida11/social-links-profile"' // to just go somewhere
+          href="https://github.com/joao-almeida11/social-links-profile" // to just go somewhere
         >
           GitHub
         </Button>
         <Button
           aria-label="Visit Jessica's Frontend Mentor profile"
-          href='"https://github.com/joao-almeida11/social-links-profile"'
+          href="https://github.com/joao-almeida11/social-links-profile"
         >
           Frontend Mentor
         </Button>
         <Button
           aria-label="Visit Jessica's LinkedIn profile"
-          href='"https://github.com/joao-almeida11/social-links-profile"'
+          href="https://github.com/joao-almeida11/social-links-profile"
         >
           LinkedIn
         </Button>
         <Button
           aria-label="Visit Jessica's Twitter profile"
-          href='"https://github.com/joao-almeida11/social-links-profile"'
+          href="https://github.com/joao-almeida11/social-links-profile"
         >
           Twitter
         </Button>
         <Button
           aria-label="Visit Jessica's Instagram profile"
-          href='"https://github.com/joao-almeida11/social-links-profile"'
+          href="https://github.com/joao-almeida11/social-links-profile"
         >
           Instagram
         </Button>
