@@ -24,11 +24,15 @@ export default function SocialLinksProfile() {
         "Front-end developer and avid reader."
       </p>
       <div className="social-links-profile--socials-list">
-        <Button>GitHub</Button>
-        <Button>Frontend Mentor</Button>
-        <Button>LinkedIn</Button>
-        <Button>Twitter</Button>
-        <Button>Instagram</Button>
+        <Button aria-label="Visit Jessica's GitHub profile">GitHub</Button>
+        <Button aria-label="Visit Jessica's Frontend Mentor profile">
+          Frontend Mentor
+        </Button>
+        <Button aria-label="Visit Jessica's LinkedIn profile">LinkedIn</Button>
+        <Button aria-label="Visit Jessica's Twitter profile">Twitter</Button>
+        <Button aria-label="Visit Jessica's Instagram profile">
+          Instagram
+        </Button>
       </div>
     </section>
   );
