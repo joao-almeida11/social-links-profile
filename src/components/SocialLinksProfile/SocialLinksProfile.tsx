@@ -4,14 +4,14 @@ import AvatarImage from "../../assets/images/avatar-jessica.jpeg";
 export default function SocialLinksProfile() {
   return (
     <section className="social-links-profile">
-      <figure className="social-links-profile--figure">
+      <div className="social-links-profile--image">
         <img
           src={AvatarImage}
           alt="Jessica Randall"
           height="80px"
           width="80px"
         />
-      </figure>
+      </div>
       <header className="social-links-profile--header">
         <h1 className="social-links-profile--header--title text-preset-1">
           Jessica Randall
@@ -20,9 +20,9 @@ export default function SocialLinksProfile() {
           London, United Kingdom
         </p>
       </header>
-      <p className="social-links-profile--description text-preset-2">
+      <blockquote className="social-links-profile--description text-preset-2">
         "Front-end developer and avid reader."
-      </p>
+      </blockquote>
       <div className="social-links-profile--socials-list">
         <Button aria-label="Visit Jessica's GitHub profile">GitHub</Button>
         <Button aria-label="Visit Jessica's Frontend Mentor profile">
