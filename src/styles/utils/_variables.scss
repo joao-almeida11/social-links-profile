@@ -1,9 +1,17 @@
-// $color-yellow: #f4d04e;
-// $color-gray-950: #111111;
-// $color-gray-500: #6b6b6b;
-// $color-white: #ffffff;
+:root {
+  --width-mobile: 375px;
+  --width-desktop: 1440px;
 
-// $spacing-300: 24px;
-// $spacing-150: 12px;
-// $spacing-100: 8px;
-// $spacing-50: 4px;
+  --green: #c4f82a;
+  --white: #ffffff;
+  --grey-700: #333333;
+  --grey-800: #1f1f1f;
+  --grey-900: #141414;
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+}
