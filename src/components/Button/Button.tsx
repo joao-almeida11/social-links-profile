@@ -1,37 +1,41 @@
-import React from "react";
-import type { ReactNode } from "react";
+import type { ReactNode, MouseEventHandler } from "react";
 
 const defaultFunc = () => {
   console.log("button clicked");
 };
 
-type ButtonOrLinkProps = {
+type ButtonProps = {
   children: ReactNode;
   type?: "submit" | "reset" | "button";
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-} & (
-  | ({
-      href?: never;
-    } & React.ButtonHTMLAttributes<HTMLButtonElement>)
-  | ({
-      href: string;
-    } & React.ReactElement<HTMLAnchorElement>)
-);
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  href?: never;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function Button({
-  children,
-  onClick = defaultFunc,
-  href = "https://github.com/joao-almeida11/social-links-profile", // just to go somewhere
-  type = "button",
-}: ButtonOrLinkProps) {
+type AnchorProps = {
+  children: ReactNode;
+  href: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+export type ButtonOrLinkProps = ButtonProps | AnchorProps;
+
+export default function Button(props: ButtonOrLinkProps) {
   // I'm checking with the href because someone might want to add an onClick to an <a>
-  if (href) {
+  if (props?.href) {
+    const { children, href } = props;
+
     return (
       <a href={href} className="text-preset-2-bold btn">
         {children}
       </a>
     );
   }
+
+  const {
+    children,
+    onClick = defaultFunc,
+    type = "button",
+  } = props as ButtonProps;
 
   return (
     <button onClick={onClick} type={type} className="text-preset-2-bold btn">

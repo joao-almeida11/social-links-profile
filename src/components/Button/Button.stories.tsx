@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import Button from "./Button";
+import type { ButtonOrLinkProps } from "./Button";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -27,10 +28,10 @@ const meta = {
       options: ["button", "submit", "reset"],
     },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<ButtonOrLinkProps>;
 
 export default meta;
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<ButtonOrLinkProps>;
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -38,16 +39,18 @@ type Story = StoryObj<typeof meta>;
  * to learn how to use render functions.
  */
 export const Primary: Story = {
-  render: (props) => (
-    <Button
-      {...props}
-      onClick={(): void => {
-        console.log("btn clicked");
-      }}
-    >
-      Placeholder
-    </Button>
-  ),
+  render: (props: ButtonOrLinkProps) => {
+    return (
+      <Button
+        {...props}
+        onClick={(): void => {
+          console.log("btn clicked");
+        }}
+      >
+        Placeholder
+      </Button>
+    );
+  },
   name: "Button Primary",
   args: {
     children: "Hello",
