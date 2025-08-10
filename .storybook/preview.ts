@@ -16,7 +16,7 @@ const preview: Preview = {
         dark: { name: "Dark", value: "#333" },
         light: { name: "Light", value: "#F7F9F2" },
         // 👇 Add your own
-        challengeBackground: { name: "Challenge Background", value: "#f4d04e" },
+        challengeBackground: { name: "Challenge Background", value: "#141414" },
       },
     },
     a11y: {

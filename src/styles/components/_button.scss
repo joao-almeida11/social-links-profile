@@ -1,0 +1,15 @@
+.btn {
+  padding: var(--spacing-150);
+  border: none;
+  border-radius: var(--spacing-100);
+  width: 100%;
+
+  &.btn-primary {
+    color: var(--grey-700);
+    background-color: var(--green);
+  }
+  &.btn-secondary {
+    background-color: var(--grey-700);
+    color: var(--white);
+  }
+}
