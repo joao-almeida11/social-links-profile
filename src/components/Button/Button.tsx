@@ -25,7 +25,12 @@ export default function Button(props: ButtonOrLinkProps) {
     const { children, href } = props;
 
     return (
-      <a href={href} className="text-preset-2-bold btn">
+      <a
+        href={href}
+        className="text-preset-2-bold btn"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         {children}
       </a>
     );
