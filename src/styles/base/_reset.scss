@@ -13,9 +13,9 @@ html {
   text-size-adjust: none;
 }
 
-body,
-figure {
+* {
   margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin in favour of better control in authored CSS */

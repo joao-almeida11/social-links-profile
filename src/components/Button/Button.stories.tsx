@@ -26,10 +26,6 @@ const meta = {
       control: { type: "select" },
       options: ["button", "submit", "reset"],
     },
-    variant: {
-      control: { type: "select" },
-      options: ["primary", "secondary"],
-    },
   },
 } satisfies Meta<typeof Button>;
 
@@ -56,24 +52,5 @@ export const Primary: Story = {
   args: {
     children: "Hello",
     type: "button",
-    variant: "primary",
-  },
-};
-export const Secondary: Story = {
-  render: (props) => (
-    <Button
-      {...props}
-      onClick={(): void => {
-        console.log("btn clicked");
-      }}
-    >
-      Placeholder
-    </Button>
-  ),
-  name: "Button Secondary",
-  args: {
-    children: "Hello",
-    type: "button",
-    variant: "secondary",
   },
 };

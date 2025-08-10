@@ -1,11 +1,11 @@
 import Attribution from "./components/Attribution";
+import SocialLinksProfile from "./components/SocialLinksProfile/SocialLinksProfile";
 
 function App() {
   return (
     <>
       <main>
-        Jessica Randall London, United Kingdom "Front-end developer and avid
-        reader." GitHub Frontend Mentor LinkedIn Twitter Instagram
+        <SocialLinksProfile />
       </main>
       <footer>
         <Attribution />
